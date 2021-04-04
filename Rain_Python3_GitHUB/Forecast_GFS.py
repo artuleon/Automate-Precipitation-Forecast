@@ -229,7 +229,7 @@ def Plot_Parameter(Precip_plot, grid_x_res, grid_y_res,Min_single_precip,time_va
     plt.colorbar()
     
     # Make a title with the time value
-    ax.set_title(u'6-hour Cumulative Precipitation Forecast (mm) at UTC time {0:%d %B %Y %H:%M}'.format(time_val), fontsize=20)
+    ax.set_title(u'6-hour Cumul. Precip. Forecast (mm) at UTC time {0:%d %B %Y %H:%M}'.format(time_val), fontsize=20)
     
     ax.coastlines()
     ax.add_feature(cfeature.BORDERS)
