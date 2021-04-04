@@ -229,7 +229,7 @@ def Plot_Parameter(Precip_plot, grid_x_res, grid_y_res,Min_single_precip,time_va
     plt.colorbar()
     
     # Make a title with the time value
-    ax.set_title(u'6-hour Cumul. Precip. Forecast (mm) at UTC time {0:%d %B %Y %H:%M}'.format(time_val), fontsize=20)
+    ax.set_title(u'6-hour Cumul. Precip. Forecast (mm) at UTC time {0:%d %B %Y %H:%M}'.format(time_val), fontsize=14)
     
     ax.coastlines()
     ax.add_feature(cfeature.BORDERS)
@@ -245,8 +245,8 @@ def Plot_Parameter(Precip_plot, grid_x_res, grid_y_res,Min_single_precip,time_va
     #gl.xlocator = mticker.FixedLocator([-180, -45, 0, 45, 180])
     gl.xformatter = LONGITUDE_FORMATTER
     gl.yformatter = LATITUDE_FORMATTER
-    gl.xlabel_style = {'size': 14, 'color': 'gray','weight': 'bold'}
-    gl.ylabel_style = {'size': 14, 'color': 'gray','weight': 'bold'}
+    gl.xlabel_style = {'size': 10, 'color': 'gray','weight': 'bold'}
+    gl.ylabel_style = {'size': 10, 'color': 'gray','weight': 'bold'}
     #plt.show()
     fname = "Maps_shapefiles\Subbasin356.shp"
     assert os.path.exists(fname), "Input file does not exist."
